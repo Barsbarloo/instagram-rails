@@ -5,6 +5,7 @@ ruby "3.0.3"
 
 gem "bootsnap", require: false # Reduces boot times through caching; required in config/boot.rb
 gem "cssbundling-rails" # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
+gem "devise"
 gem "jsbundling-rails" # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
