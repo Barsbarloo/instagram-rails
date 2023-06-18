@@ -4,7 +4,8 @@
     <div class="card-body">
       <div class="instagram-logo-link"></div>
       <p class="text-center text-body-tertiary fs-6 fw-semibold">"Sign up to see photos and videos from your friends"</p>
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="d-flex justify-content-center">
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="field">
             <%= f.label :email %><br />
             <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -25,12 +26,14 @@
           <div class="actions">
             <%= f.submit "Log in" %>
           </div>
-        <% end %>
+          <% end %>
+        </div>
 
         <hr>
 
-        <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
-
+        <div class="d-flex justify-content-center">
+          <%= link_to "Forgot your password?", new_password_path(resource_name)%><br />
+        </div>
       </div>
     </div>
 
