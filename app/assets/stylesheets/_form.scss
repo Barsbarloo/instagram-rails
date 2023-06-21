@@ -4,6 +4,10 @@ input[type="email"], input[type="password"], input[type="text"] {
 
   &:focus{
     background-color: #fafafa;
-    outline: 0;
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
   }
 }
