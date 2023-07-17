@@ -3,8 +3,7 @@
     <div class="card py-4 mb-3" style="width: 28rem;">
     <div class="card-body">
       <div class="instagram-logo-link"></div>
-      <p class="text-center text-body-tertiary fs-6 fw-semibold">"Sign up to see photos and videos from your friends"</p>
-        <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="mb-3">
             <%= f.email_field :email, placeholder:"Phone number, username, or email", autofocus: true, autocomplete: "email", class: "form-control" %>
