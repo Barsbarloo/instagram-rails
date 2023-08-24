@@ -5,4 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates :username, presence: true, uniqueness: { case_sensitive: false }
+
+  attr_writer :login
+  def login
+    @login || self.username || self.email
+  end
 end
