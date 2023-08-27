@@ -10,3 +10,12 @@
 .standard-link {
   text-decoration: none;
 };
+
+.sidebar-link {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: black;
+  }
+}
