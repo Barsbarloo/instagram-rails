@@ -3,7 +3,7 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.posts.create(post_params)
-    redirect_to root_path
+    redirect_to edit_post_path(@post)
   end
 
   private
